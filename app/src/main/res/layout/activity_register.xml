@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/wallb">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="20dp"
+                android:cropToPadding="true"
+                android:layout_gravity="center_horizontal"
+                android:padding="16dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_directions_bike_black_24dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f9d7db"
+
+                />
+
+
+
+            <EditText
+                android:id="@+id/edit_userName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:drawablePadding="12dp"
+                android:layout_marginTop="4dp"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/ic_account_circle_black_24dp"
+                android:hint="@string/regusername"
+                android:textColor="@color/White"
+                android:maxLines="1"
+                android:paddingTop="50dp"
+                android:textColorHint="#fff"
+                android:textSize="30dp"  />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f9d7db"
+
+                />
+
+
+            <EditText
+                android:id="@+id/edit_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:drawablePadding="12dp"
+                android:layout_marginTop="4dp"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/ic_lock_black_24dp"
+                android:hint="@string/Password"
+                android:paddingLeft="2dp"
+                android:textColor="@color/White"
+                android:maxLines="1"
+                android:textColorHint="#fff"
+                android:textSize="30sp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f9d7db"
+
+                />
+
+
+            <EditText
+                android:id="@+id/edit__cnf_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:drawablePadding="12dp"
+                android:paddingBottom="20dp"
+                android:layout_marginTop="4dp"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/ic_lock_black_24dp"
+                android:hint="Confirm_Password"
+                android:paddingLeft="2dp"
+                android:maxLines="1"
+                android:textColorHint="#fff"
+                android:textColor="@color/White"
+                android:textSize="30sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f9d7db"
+
+                />
+            <Button
+                android:id="@+id/btn_reg_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Login"
+                android:background="@drawable/btn_login_style"
+                android:textColor="#fff"
+                android:textSize="30sp"
+                android:clickable="true"
+                android:padding="16dp"
+                android:textStyle="bold"/>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
