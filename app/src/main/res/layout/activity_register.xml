@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RegisterActivity"
+    tools:context=".Activities.RegisterActivity"
     android:orientation="vertical"
     android:gravity="center_horizontal"
-    android:background="@drawable/wallb">
+    android:background="@drawable/wallbackground">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -49,6 +49,7 @@
                 android:textColor="@color/White"
                 android:maxLines="1"
                 android:paddingTop="50dp"
+                android:textStyle="bold"
                 android:textColorHint="#fff"
                 android:textSize="30dp"  />
             <View
@@ -61,6 +62,7 @@
 
             <EditText
                 android:id="@+id/edit_password"
+                android:textStyle="bold"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -87,6 +89,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
+                android:textStyle="bold"
                 android:drawablePadding="12dp"
                 android:paddingBottom="20dp"
                 android:layout_marginTop="4dp"
@@ -114,6 +117,7 @@
                 android:background="@drawable/btn_login_style"
                 android:textColor="#fff"
                 android:textSize="30sp"
+
                 android:clickable="true"
                 android:padding="16dp"
                 android:textStyle="bold"/>

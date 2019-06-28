@@ -1,4 +1,4 @@
-package com.example.pizzalovers;
+package com.example.pizzalovers.Activities;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -7,6 +7,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.example.pizzalovers.DatabaseHelper;
+import com.example.pizzalovers.R;
 
 public class RegisterActivity extends AppCompatActivity {
     EditText reg_username;
