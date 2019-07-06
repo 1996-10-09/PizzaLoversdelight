@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Payment">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/paymentcardview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="3dp"
+        app:cardUseCompatPadding="true"
+        app:cardPreventCornerOverlap="false">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:id="@+id/linearlayout1"
+                android:gravity="center"
+                android:background="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_marginTop="20dp"
+                    android:tint="@color/White"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_payment_black_24dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:textColor="@color/White"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="22sp"
+                    android:text="PAYMENT"
+                    android:textAlignment="center"
+                    android:textStyle="bold"/>
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/squre"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:rotation="45"
+                android:layout_marginTop="-10dp"
+                android:src="@drawable/square"
+                android:layout_below="@+id/linearlayout1"
+                android:layout_centerHorizontal="true"/>
+
+            <RelativeLayout
+                android:id="@+id/Relativeone"
+                android:layout_below="@+id/squre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp">
+
+
+                <ImageView
+                    android:id="@+id/nameimage"
+                    android:src="@drawable/ic_restaurant_black_24dp"
+                    android:tint="@color/White"
+                    android:layout_width="40dp"
+                    android:padding="8dp"
+                    android:background="@color/colorPrimary"
+                    android:layout_height="40dp" />
+                <EditText
+                    android:id="@+id/paymentName"
+                    android:paddingLeft="20dp"
+                    android:textSize="20sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/nameimage"
+                    android:layout_alignBottom="@+id/nameimage"
+                    android:background="@color/transparent"
+                    android:hint="Pizza Name"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RelativeTwo"
+                android:layout_below="@+id/Relativeone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp">
+
+
+                <ImageView
+                    android:id="@+id/priceimage"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@color/colorPrimary"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_room_service_black_24dp"
+                    android:tint="@color/White" />
+
+                <EditText
+                    android:id="@+id/paymentprice"
+                    android:paddingLeft="20dp"
+                    android:textSize="20sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/priceimage"
+                    android:layout_alignBottom="@+id/priceimage"
+                    android:background="@color/transparent"
+                    android:hint="@string/price"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RelativeThree"
+                android:layout_below="@+id/RelativeTwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp">
+
+                <LinearLayout
+                    android:id="@+id/linearlayout3"
+                    android:gravity="center"
+                    android:background="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:textColor="@color/White"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="22sp"
+                        android:text="@string/select_your_payment_method"
+                        android:textAlignment="center"
+                        android:textStyle="bold"/>
+
+
+
+
+
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/RelativeFive"
+                android:layout_below="@+id/RelativeThree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp">
+
+
+                <ImageView
+                    android:id="@+id/cardimage"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@color/colorPrimary"
+                    android:padding="8dp"
+                    android:src="@drawable/creditcard" />
+                <Button
+                    android:id="@+id/cardpayment"
+                    android:paddingLeft="20dp"
+                    android:textSize="20sp"
+                    android:text="PAID BY MY CARD"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/cardimage"
+                    android:layout_alignBottom="@+id/cardimage"
+                    android:background="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:onClick="payment"
+                    android:textColor="@color/White"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/RelativeSix"
+                android:layout_below="@+id/RelativeFive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp">
+
+
+                <ImageView
+                    android:id="@+id/cashimage"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:tint="@color/White"
+                    android:background="@color/colorPrimary"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_attach_money_black_24dp" />
+                <Button
+                    android:id="@+id/cash"
+                    android:paddingLeft="20dp"
+                    android:textSize="20sp"
+                    android:text="PAID BY CASH"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/cashimage"
+                    android:layout_alignBottom="@+id/cashimage"
+                    android:background="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:textColor="@color/White"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
