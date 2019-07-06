@@ -3,7 +3,7 @@ package com.example.pizzalovers.Activities;
 
 import android.content.Intent;
 import android.support.design.widget.CollapsingToolbarLayout;
-import android.support.v7.app.ActionBar;
+
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -39,26 +39,26 @@ public class PizzaDetails extends AppCompatActivity {
             }
         });
 
-       // getSupportActionBar().hide();
+        getSupportActionBar().hide();
 
 
-        String pizzaname  = getIntent().getExtras().getString("name");
-        String pizzadescription = getIntent().getExtras().getString("description");
-        int pizzaId = getIntent().getExtras().getInt("pizzaId");
-        int pizzaPrice = getIntent().getExtras().getInt("price") ;
-        String pizzaimage_Url = getIntent().getExtras().getString("imageUrl") ;
+        String pizzaname  = getIntent().getExtras().getString("Pizza_name");
+        String pizzadescription = getIntent().getExtras().getString("Pizza_description");
+        int pizzaId = getIntent().getExtras().getInt("pizza_Id");
+        int pizzaPrice = getIntent().getExtras().getInt("Pizza_price") ;
+        String image_Url = getIntent().getExtras().getString("Pizza_image") ;
 
 
 
         CollapsingToolbarLayout collapsingToolbarLayout = findViewById(R.id.collapsingtoolbar_id);
         collapsingToolbarLayout.setTitleEnabled(true);
 
-        TextView pizza_name = findViewById(R.id.aa_pizza_name);
+        TextView pizza_name = findViewById(R.id.detail_pizza_name);
 
-        TextView pizza_id= findViewById(R.id.aa_Pizza_Id) ;
-        TextView pizza_description = findViewById(R.id.aa_description);
-        TextView pizza_price  = findViewById(R.id.aa_price) ;
-        ImageView img = findViewById(R.id.aa_thumbnail);
+        TextView pizza_id= findViewById(R.id.detail_Pizza_Id) ;
+        TextView pizza_description = findViewById(R.id.detail_pizza_description);
+        TextView pizza_price  = findViewById(R.id.detail_Pizza_price) ;
+        ImageView img = findViewById(R.id.pizza_thumbanail);
 
         // setting values to each view
 
@@ -76,7 +76,8 @@ public class PizzaDetails extends AppCompatActivity {
 
 
         // set image using Glide
-        Glide.with(this).load(pizzaimage_Url).apply(requestOptions).into(img);
+        Glide.with(this).load(image_Url).apply(requestOptions).into(img);
+
 
 
 

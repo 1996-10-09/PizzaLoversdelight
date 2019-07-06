@@ -45,11 +45,11 @@ import java.util.List;
                 public void onClick(View v) {
 
                     Intent i = new Intent(mContext, PizzaDetails.class);
-                    i.putExtra("pizzaId",mData.get(viewHolder.getAdapterPosition()).getPizzaId());
-                    i.putExtra("description",mData.get(viewHolder.getAdapterPosition()).getDescription());
-                    i.putExtra("price",mData.get(viewHolder.getAdapterPosition()).getPrice());
-                    i.putExtra("name",mData.get(viewHolder.getAdapterPosition()).getName());
-                    i.putExtra(" imageUrl",mData.get(viewHolder.getAdapterPosition()).getImageUrl());
+                    i.putExtra("pizza_Id",mData.get(viewHolder.getAdapterPosition()).getPizzaId());
+                    i.putExtra("Pizza_description",mData.get(viewHolder.getAdapterPosition()).getDescription());
+                    i.putExtra("Pizza_price",mData.get(viewHolder.getAdapterPosition()).getPrice());
+                    i.putExtra("Pizza_name",mData.get(viewHolder.getAdapterPosition()).getName());
+                    i.putExtra(" Pizza_image",mData.get(viewHolder.getAdapterPosition()).getImageUrl());
 
                     mContext.startActivity(i);
 
